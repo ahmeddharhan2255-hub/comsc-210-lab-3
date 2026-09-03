@@ -21,13 +21,19 @@ struct Resturant
 
 int main(){
 
+    struct_population();
+
 }
 
 
-string struct_population(struct Resturant){
+string struct_population(const Resturant& temp){
     string restur_name, restur_address, restur_owner;
     int restur_occupancy, restur_meal_num;
 
-    
-    
+    cout << "Please enter the name of the Resturant: " << endl;
+    cin >> restur_name;
+
+    cout << "Please Enter The Address Of The Resturant: " << endl;
+    cin >> restur
+
 }
