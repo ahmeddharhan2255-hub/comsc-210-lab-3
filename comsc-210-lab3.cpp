@@ -4,6 +4,10 @@
 #include <string>
 using namespace std;
 
+string struct_creation(struct Resturant);
+
+void struct_display(struct Resturant);
+
 struct Resturant
 {
     string name;
@@ -17,4 +21,13 @@ struct Resturant
 
 int main(){
 
+}
+
+
+string struct_population(struct Resturant){
+    string restur_name, restur_address, restur_owner;
+    int restur_occupancy, restur_meal_num;
+
+    
+    
 }
