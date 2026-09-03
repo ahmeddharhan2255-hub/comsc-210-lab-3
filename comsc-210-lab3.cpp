@@ -26,14 +26,14 @@ int main(){
 }
 
 
-string struct_population(const Resturant& temp){
+string struct_population(Resturant& temp){
     string restur_name, restur_address, restur_owner;
     int restur_occupancy, restur_meal_num;
 
     cout << "Please enter the name of the Resturant: " << endl;
-    cin >> restur_name;
+    cin >> temp.name;
 
     cout << "Please Enter The Address Of The Resturant: " << endl;
-    cin >> restur
+    cin >> temp.address;
 
 }
