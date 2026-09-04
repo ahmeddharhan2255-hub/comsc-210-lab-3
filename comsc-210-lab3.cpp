@@ -15,26 +15,33 @@ struct Resturant
 
 Resturant struct_population();
 
-void data_display(x);
+void data_display(Resturant r);
 
 int main(){
 
-    Resturant temp = struct_population();
-    cout << temp.name << endl;
-    cout << temp.address << endl;
-    cout << temp.max_occupancy << endl;
-    cout << temp.meal_options << endl;
-    cout << temp.owner << endl;
+    Resturant rest1, rest2, rest3, rest4;
+
+    rest1 = struct_population();
+    data_display(rest1);
+
+    rest2 = struct_population();
+    data_display(rest2);
+
+    rest3 = struct_population();
+    data_display(rest3);
+
+    rest4 = struct_population();
+    data_display(rest4);
 }
 
 Resturant struct_population(){
     Resturant temp;
 
     cout << "Please enter the Resturant: " << endl;
-    cin >> temp.name;
+    getline(cin, temp.name);
 
     cout << "Please Enter The Address Of The Resturant: " << endl;
-    cin >> temp.address;
+    getline(cin, temp.address);
 
     cout << "Please enter the Maximum Occupancy of the Resturant: " << endl;
     cin >> temp.max_occupancy;
@@ -43,11 +50,28 @@ Resturant struct_population(){
     cin >> temp.meal_options;
 
     cout << "Please enter the name of the owner " << endl;
-    cin >> temp.owner;
+    getline(cin, temp.owner);
 
     return temp;
 }
 
-void data_display(x){
-    cout << x.name << e
+void data_display(Resturant r){
+    cout << "******************" << endl;
+    cout << "  RESTURANT DATA  " << endl;
+    cout << "******************\n" << endl;
+
+    cout << "RESTURANT NAME: " << r.name << endl;
+    cout << "------------------\n" << endl;
+    
+    cout << "RESTURANT ADDRESS: " << r.name << endl;
+    cout << "------------------\n" << endl;
+
+    cout << "RESTURANT MAX OCCUPANCY: " << r.name << endl;
+    cout << "------------------\n" << endl;
+
+    cout << "RESTURANT # OF OPTIONS: " << r.name << endl;
+    cout << "------------------\n" << endl;
+
+    cout << "RESTURANT OWNER: " << r.name << endl;
+    cout << "------------------\n" << endl;
 }
