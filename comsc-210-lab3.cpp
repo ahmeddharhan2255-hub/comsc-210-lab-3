@@ -20,13 +20,15 @@ int main(){
     Resturant temp = struct_population();
     cout << temp.name << endl;
     cout << temp.address << endl;
-
+    cout << temp.max_occupancy << endl;
+    cout << temp.meal_options << endl;
+    cout << temp.owner << endl;
 }
 
 Resturant struct_population(){
     Resturant temp;
 
-    cout << "Please enter the name of the Resturant: " << endl;
+    cout << "Please enter the Resturant: " << endl;
     cin >> temp.name;
 
     cout << "Please Enter The Address Of The Resturant: " << endl;
@@ -38,7 +40,7 @@ Resturant struct_population(){
     cout << "Please enter the number of meal options available; " << endl;
     cin >> temp.meal_options;
 
-    cout << "Please enter the name of the Resturant Owner " << endl;
+    cout << "Please enter the name of the owner " << endl;
     cin >> temp.owner;
 
     return temp;
