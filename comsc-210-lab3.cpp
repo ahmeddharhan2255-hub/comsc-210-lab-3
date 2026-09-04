@@ -40,14 +40,16 @@ Resturant struct_population(){
     cout << "Please enter the Resturant: " << endl;
     getline(cin, temp.name);
 
-    cout << "Please Enter The Address Of The Resturant: " << endl;
+    cout << "Please Enter The Address: " << endl;
     getline(cin, temp.address);
 
-    cout << "Please enter the Maximum Occupancy of the Resturant: " << endl;
+    cout << "Please enter the Maximum Occupancy: " << endl;
     cin >> temp.max_occupancy;
 
-    cout << "Please enter the number of meal options available; " << endl;
+    cout << "Please enter the number of meal options available: " << endl;
     cin >> temp.meal_options;
+
+    cin.ignore();
 
     cout << "Please enter the name of the owner " << endl;
     getline(cin, temp.owner);
@@ -56,22 +58,27 @@ Resturant struct_population(){
 }
 
 void data_display(Resturant r){
-    cout << "******************" << endl;
-    cout << "  RESTURANT DATA  " << endl;
-    cout << "******************\n" << endl;
+    cout << "***************************" << endl;
+    cout << "      RESTAURANT DATA  " << endl;
+    cout << "***************************\n" << endl;
 
-    cout << "RESTURANT NAME: " << r.name << endl;
-    cout << "------------------\n" << endl;
+    cout << "---------------------------" << endl;
+    cout << "NAME: " << r.name << endl;
+    cout << "---------------------------\n" << endl;
     
-    cout << "RESTURANT ADDRESS: " << r.name << endl;
-    cout << "------------------\n" << endl;
+    cout << "---------------------------" << endl;
+    cout << "ADDRESS: " << r.address << endl;
+    cout << "---------------------------\n" << endl;
 
-    cout << "RESTURANT MAX OCCUPANCY: " << r.name << endl;
-    cout << "------------------\n" << endl;
+    cout << "---------------------------" << endl;
+    cout << "MAX OCCUPANCY: " << r.max_occupancy << endl;
+    cout << "---------------------------\n" << endl;
 
-    cout << "RESTURANT # OF OPTIONS: " << r.name << endl;
-    cout << "------------------\n" << endl;
+    cout << "---------------------------" << endl;
+    cout << " # OF OPTIONS: " << r.meal_options << endl;
+    cout << "---------------------------\n" << endl;
 
-    cout << "RESTURANT OWNER: " << r.name << endl;
-    cout << "------------------\n" << endl;
+    cout << "---------------------------" << endl;
+    cout << " OWNER: " << r.owner << endl;
+    cout << "---------------------------\n" << endl;
 }
