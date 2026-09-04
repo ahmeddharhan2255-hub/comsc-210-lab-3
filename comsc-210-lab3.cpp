@@ -14,12 +14,11 @@ struct Resturant
 };
 
 void struct_creation(struct Resturant);
-
 void struct_display(struct Resturant);
 
 int main(){
 
-    struct_population(Resturant);
+    struct_population();
 }
 
 void struct_population(Resturant temp){
