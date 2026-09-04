@@ -4,7 +4,8 @@
 #include <string>
 using namespace std;
 
-struct Resturant
+//Struct declaration
+struct Restaurant
 {
     string name;
     string address;
@@ -13,13 +14,13 @@ struct Resturant
     string owner;
 };
 
-Resturant struct_population();
-
-void data_display(Resturant r);
+//Function prototype
+Restaurant struct_population();
+void data_display(Restaurant r);
 
 int main(){
 
-    Resturant rest1, rest2, rest3, rest4;
+    Restaurant rest1, rest2, rest3, rest4;
 
     rest1 = struct_population();
     data_display(rest1);
@@ -36,8 +37,9 @@ int main(){
     return 0;
 }
 
-Resturant struct_population(){
-    Resturant temp;
+//Populates resturant structures
+Restaurant struct_population(){
+    Restaurant temp;
 
     cout << "Please enter the Resturant: " << endl;
     getline(cin, temp.name);
@@ -59,7 +61,8 @@ Resturant struct_population(){
     return temp;
 }
 
-void data_display(Resturant r){
+//Displays the struct data
+void data_display(Restaurant r){
     cout << "***************************" << endl;
     cout << "      RESTAURANT DATA  " << endl;
     cout << "***************************\n" << endl;
@@ -83,4 +86,5 @@ void data_display(Resturant r){
     cout << "---------------------------" << endl;
     cout << "OWNER: " << r.owner << endl;
     cout << "---------------------------\n" << endl;
+    
 }
