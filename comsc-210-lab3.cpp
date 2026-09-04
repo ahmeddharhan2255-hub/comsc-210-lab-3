@@ -15,6 +15,8 @@ struct Resturant
 
 Resturant struct_population();
 
+void data_display(x);
+
 int main(){
 
     Resturant temp = struct_population();
@@ -44,4 +46,8 @@ Resturant struct_population(){
     cin >> temp.owner;
 
     return temp;
+}
+
+void data_display(x){
+    cout << x.name << e
 }
