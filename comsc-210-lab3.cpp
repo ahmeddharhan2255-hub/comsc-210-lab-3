@@ -9,7 +9,7 @@ struct Resturant
     string name;
     string address;
     int max_occupancy;
-    int meal_options;
+    float ratings;
     string owner;
 };
 
@@ -32,6 +32,8 @@ int main(){
 
     rest4 = struct_population();
     data_display(rest4);
+
+    return 0;
 }
 
 Resturant struct_population(){
@@ -46,8 +48,8 @@ Resturant struct_population(){
     cout << "Please enter the Maximum Occupancy: " << endl;
     cin >> temp.max_occupancy;
 
-    cout << "Please enter the number of meal options available: " << endl;
-    cin >> temp.meal_options;
+    cout << "Please enter the ratings in stars 0-5: " << endl;
+    cin >> temp.ratings;
 
     cin.ignore();
 
@@ -75,10 +77,10 @@ void data_display(Resturant r){
     cout << "---------------------------\n" << endl;
 
     cout << "---------------------------" << endl;
-    cout << " # OF OPTIONS: " << r.meal_options << endl;
+    cout << "RATINGS: " << r.ratings << endl;
     cout << "---------------------------\n" << endl;
 
     cout << "---------------------------" << endl;
-    cout << " OWNER: " << r.owner << endl;
+    cout << "OWNER: " << r.owner << endl;
     cout << "---------------------------\n" << endl;
 }
