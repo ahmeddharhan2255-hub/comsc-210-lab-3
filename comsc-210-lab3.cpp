@@ -13,15 +13,19 @@ struct Resturant
     string owner;
 };
 
-void struct_creation(struct Resturant);
-void struct_display(struct Resturant);
+Resturant struct_population();
 
 int main(){
 
-    struct_population();
+    Resturant temp = struct_population();
+    cout << temp.name << endl;
+    cout << temp.address << endl;
+
 }
 
-void struct_population(Resturant temp){
+Resturant struct_population(){
+    Resturant temp;
+
     cout << "Please enter the name of the Resturant: " << endl;
     cin >> temp.name;
 
@@ -37,4 +41,5 @@ void struct_population(Resturant temp){
     cout << "Please enter the name of the Resturant Owner " << endl;
     cin >> temp.owner;
 
+    return temp;
 }
